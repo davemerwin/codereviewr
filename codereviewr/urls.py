@@ -13,5 +13,5 @@ urlpatterns = patterns('',
 
 if DEBUG:
     urlpatterns += patterns('', 
-        (r'^media/(.*)$', 'django.views.static.serve', {'document_root': os.path.expanduser('~/git/codereviewr/media')}),
+        (r'^media/(.*)$', 'django.views.static.serve', {'document_root': os.path.expanduser('~/sandbox/codereviewr/media')}),
     )

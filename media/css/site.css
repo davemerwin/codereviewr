@@ -27,7 +27,7 @@ body {background:#D9D9D9;}
 #cont-col1 img {padding:5px; border:1px solid #ccc; background:#efefef;}
 .featured-image {margin:18px auto; display:block;}
 
-#page-content {width:670px; padding:10px 0 10px 10px;}
+#page-content {width:650px; padding:10px 10px 10px 20px;}
 #sidebar {background:#B2B2B2; padding:10px; width:240px;}
 
 /* Footer */
@@ -52,7 +52,7 @@ body {background:#D9D9D9;}
 
 /* =FORMS
 ----------------------------------------------------------------------- */
-#search-block {height:18px;}
+#search-block {height:54px; line-height:54px; margin:-10px -20px 18px -20px; text-align:center; background:#E5E5E5;}
 #search-block div, #email-signup div {display:inline;}
 #submit_search {margin:0 0 0 10px;}
 

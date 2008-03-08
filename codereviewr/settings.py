@@ -3,6 +3,7 @@ import os
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
+PROJECT_PATH = os.path.abspath(os.path.split(__file__)[0])
 
 ADMINS = (
     # ('Your Name', 'your_email@domain.com'),

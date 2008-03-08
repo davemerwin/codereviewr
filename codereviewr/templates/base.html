@@ -30,8 +30,8 @@
 				<li><a href="" title="" class="">Help</a></li>
 			</ul>
 </div>
-<div id="wrap" class="container">
-		<div id="content" class="clearfix">
+<div id="content" class="clearfix">
+    <div class="container">
     <div id="page-content" class="column">
                 <div id="search-block" class="">
                     <!-- Google CSE code begins -->
@@ -65,22 +65,22 @@
                     <!-- Google CSE Code ends -->
     				</form>
     			</div>
+
 			    {% block content %}{% endblock %}
 			</div>
 			<div id="sidebar" class="column last">
 			{% block sidebar %}{% endblock %}
 			</div>
-		</div>
-		<div id="footer" class="clear">
-			<ul id="footer-nav">
-				<li><a href="" title="">Home</a></li>
-				<li><a href="" title="">About</a></li>
-				<li><a href="" title="">The Site's</a></li>
-				<li><a href="" title="">Main</a></li>
-				<li><a href="" title="">Navigation</a></li>
-				<li><a href="" title="">System</a></li>
-			</ul>
-		</div>
 	</div>
+</div>
+<div id="footer" class="clear">
+    <div class="container clearfix">
+        <div class="col1 span-18 column">
+            hello
+        </div>
+        <div class="col2 span-6 column last">
+        </div>
+	</div>
+</div>
 </body>
 </html>

@@ -1,0 +1,7 @@
+codereviewr is a Django project for submitting code for code reviews and being
+able to comment on other people's code (OPC).  It hopes to promote coding best
+practices and learning.
+
+Currently in very alpha and the results are part of our "1 Night 3 Hours"
+effort involving Nate Anderson. Rob Hudson, Dave Merwin, Percy Perez and Brad
+Pitcher.

@@ -4,108 +4,38 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>HTML 4 Strict: Starter Kit</title>
+	<title>CodeReviewr {% block title_block %}{% endblock %}</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Dave Merwin">
 	<!-- Date: 2007-12-12 -->
 	<!-- Framework CSS -->
-   <link rel="stylesheet" href="{{media_url}}css/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="{{media_url}}css/site.css" type="text/css" media="screen, projection">
-   <link rel="stylesheet" href="{{media_url}}css/print.css" type="text/css" media="print">	
-   <!--[if IE]><link rel="stylesheet" href="{{media_url}}css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+   <link rel="stylesheet" href="{{MEDIA_URL}}css/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="{{MEDIA_URL}}css/site.css" type="text/css" media="screen, projection">
+   <link rel="stylesheet" href="{{MEDIA_URL}}css/print.css" type="text/css" media="print">	
+   <!--[if IE]><link rel="stylesheet" href="{{MEDIA_URL}}css/ie.css" type="text/css" media="screen, projection"><![endif]-->
 	
-	<script type="text/javascript" src="{{media_url}}js/jquery-1.2.3.js"></script>
-	<script type="text/javascript" src="{{media_url}}js/site.settings.js"></script>
+	<script type="text/javascript" src="{{MEDIA_URL}}js/jquery-1.2.3.js"></script>
+	<script type="text/javascript" src="{{MEDIA_URL}}js/site.settings.js"></script>
 </head>
-<body class="reset">
-	<ul id="demo-nav" class="reset">
-	<li><a href="index.html" title="HTML 4.01 Strict">HTML 4.01 Strict</a></li>
-	<li><a href="xhtml-strict.html" title="XHTML 1.0 Strict">XHTML 1.0 Strict</a></li>
-	<li><a href="xhtml-transitional.html" title="XHTML 1.0 Transitional">XHTML 1.0 Transitional</a></li>
- <li>These examples are all HTML Strict:</li>
-<li><a href="slide-show.html" title="Slide Show">Slide Show</a></li>
-<li><a href="basic-form.html" title="Basic Form">Basic Form</a></li>
-	</ul>
-	<p id="content-skip" class="mir"><a href="#content" title="Skip To Content" class="mir">Skip To Content</a></p>
-	<div id="wrap" class="container">
+<body class="reset" id="{% block body_id_block %}{% endblock %}">
+	<p id="content-skip" class="mir reset"><a href="#content" title="Skip To Content" class="mir">Skip To Content</a></p>
 		<div id="header" class="clearfix">
-			<h2>HTML 4 Strict: Starter Kit</h2>
-			<h3>This is the byline</h3>
-			<ul id="header-nav" class="reset span-24 clearfix">
+			<h2 class="reset">CodeReviewr</h2>
+			<ul id="header-nav" class="reset clearfix">
 				<li><a href="" title="" class="active">Home</a></li>
 				<li><a href="" title="" class="">About</a></li>
-				<li><a href="" title="" class="">The Site's</a></li>
-				<li><a href="" title="" class="">Main</a></li>
-				<li><a href="" title="" class="">Navigation</a></li>
-				<li><a href="" title="" class="">System</a></li>
 			</ul>
-			<div id="search-block" class="span-7">
+</div>
+<div id="wrap" class="container">
+		<div id="content" class="clear">
+		    <div id="search-block" class="span-7">
 				<form action="index.html" method="get" accept-charset="utf-8">
 					<div><input type="text" name="search" value="" id="search"></div>
 					<div><input type="submit" name="submit_search" value="Search" id="submit_search"></div>
 				</form>
 			</div>
-		</div>
-		<div id="content" class="clear">
-			<ul id="breadcrumb" class="decrease">
-				<li><a href="" title="">Home</a></li>
-				<li><a href="" title="">About</a></li>
-			</ul>
-			<div id="cont-col1" class="span-16 append-1 column">
-				<h1>Welcome To The Show</h1>
-				<p><img src="{{media_url}}imgs/demo-image.jpg" alt="Image Name">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam arcu. Suspendisse potenti. Nulla urna purus, pulvinar nec, adipiscing ut, placerat id, mi. <em>Vivamus faucibus lobortis odio.</em> Morbi sodales fringilla urna. In interdum, nisl euismod eleifend egestas, dui leo vestibulum erat, non <a href="http://apple.com" title="Apple Computer Website">Apple Website</a> turpis leo ut ante. In condimentum adipiscing ipsum. Etiam eros. Nullam lectus arcu, pellentesque ac, semper ut, vestibulum vitae, nulla. Maecenas risus leo, tincidunt in, eleifend et, sagittis a, nunc.</p>
-				
-				<blockquote><p>Morbi nec mi quis dui ultricies gravida. Vivamus tincidunt porta diam. Vivamus turpis. Sed risus libero, congue in, placerat quis, mollis id, erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent ac eros vitae lorem porttitor dictum. Nam luctus mauris ut ipsum.</p></blockquote>
-
-				<p>Ut porta, sapien vitae euismod tempor, magna felis fermentum justo, nec dignissim pede elit sed odio. Proin sit amet tellus. Vestibulum dapibus, ligula tincidunt blandit lacinia, risus turpis cursus magna, ut accumsan ipsum magna sit amet odio. Fusce at quam. Integer id elit. Sed eleifend dui ac orci. <strong>Praesent imperdiet vulputate pede.</strong> Praesent pulvinar sodales lectus. Donec mi libero, dictum ut, lacinia eu, rhoncus eget, dolor. <a href="mypdf.pdf" title="My PDF">Donec quis justo.</a> Sed nisl risus, pulvinar nec, consequat ut, volutpat quis, mauris. Praesent sit amet pede in ante tincidunt bibendum.</p>
-
-	<ul>			
-		<li>Donec orci eros, dictum accumsan, eleifend a, laoreet eget, mauris.</li>
-		<li>Donec lorem ante, <a href="/about/" title="About">aliquam vitae</a>, euismod ut, tempor eget, odio.</li>
-		<li>Fusce ornare justo ut sem.</li>
-		<li>In rutrum, urna ut tempus euismod, pede velit hendrerit tellus, non condimentum risus diam nec felis.</li>
-	</ul>
-
-<img src="{{media_url}}imgs/demo-image-large.jpg" alt="Image Name" class="featured-image">
-
-				<p>Nam cursus commodo neque. Nam nisi. Ut vehicula orci ac risus. Donec lobortis. Aliquam at orci. Nulla molestie. Class aptent taciti sociosqu ad <a href="mydoc.doc" title="My Doc">litora torquent</a> per conubia nostra, per inceptos hymenaeos. Praesent mollis convallis nunc. Nullam eu erat. Praesent vel nibh vitae nunc rhoncus vehicula. Ut eros augue, tristique a, pulvinar eu, viverra eleifend, est. Quisque tortor. Nam ut neque. Donec sed elit eu justo blandit tincidunt. Vestibulum fermentum tellus sit amet leo. In lorem augue, auctor eu, lacinia ut, accumsan vitae, orci. Etiam felis nisi, fermentum eget, bibendum nec, viverra at, justo.</p>
-	
-	<ol>
-		<li>Donec orci eros, dictum accumsan, eleifend a, laoreet eget, mauris.</li>
-		<li>Donec lorem ante, aliquam vitae, euismod ut, tempor eget, odio.</li>
-		<li>Fusce ornare justo ut sem.</li>
-		<li>In rutrum, urna ut tempus euismod, pede velit hendrerit tellus, non condimentum risus diam nec felis.</li>
-	</ol>
-</div>
-			<div id="cont-col2" class="span-5 column last">
-				<h3>Sidebar Menu One</h3>
-				<h4>This is a Menu</h4>
-				<ul>
-					<li><a href="" title="">When To Stop</a></li>
-					<li><a href="" title="">Menu Option</a></li>
-					<li><a href="" title="">What Can I Do</a></li>
-					<li><a href="" title="">There is More To Do</a></li>
-					<li><a href="" title="">Much More</a></li>
-				</ul>
-				
-				<img src="{{media_url}}imgs/demo-sidebar.jpg" alt="Image Name">
-				
-				<h4>Sidebar Menu Two</h4>
-				<ul>
-					<li><a href="" title="">This Might Work</a></li>
-					<li><a href="" title="">What More Can I Say</a></li>
-					<li><a href="" title="">You Are Using A Site</a></li>
-					<li><a href="" title="">This is a Website</a></li>
-				</ul>
-				<form action="index_html_4_strict_submit" method="post" accept-charset="utf-8" id="email-signup">
-					<div><label for="sign_up">Sign Up</label><input type="text" name="sign_up" value="" id="sign_up"></div>
-					<div><input type="submit" name="sign_up_submit" value="Submit" id="sign_up_submit"></div>
-				</form>
-				<div id="note-1" class="box sidebar-note">
-					<h3>Hello World</h3>
-					<small>In lorem augue, auctor eu, lacinia ut, accumsan vitae, orci. Etiam felis nisi, fermentum eget, bibendum nec, viverra at, justo.</small>
-				</div>
-			</div>
+			{% block content %}{% endblock %}
+			{% block sidebar %}{% endblock %}
 		</div>
 		<div id="footer" class="clear">
 			<ul id="footer-nav">

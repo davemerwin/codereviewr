@@ -24,18 +24,25 @@
 			<ul id="header-nav" class="reset clearfix">
 				<li><a href="" title="" class="active">Home</a></li>
 				<li><a href="" title="" class="">About</a></li>
+				<li><a href="" title="" class="">My Account</a></li>
+				<li><a href="" title="" class="">Log Out</a></li>
+				<li><a href="" title="" class="">Help</a></li>
 			</ul>
 </div>
 <div id="wrap" class="container">
-		<div id="content" class="clear">
-		    <div id="search-block" class="span-7">
-				<form action="index.html" method="get" accept-charset="utf-8">
-					<div><input type="text" name="search" value="" id="search"></div>
-					<div><input type="submit" name="submit_search" value="Search" id="submit_search"></div>
-				</form>
+		<div id="content" class="clearfix">
+		    <div id="page-content" class="column">
+		        <div id="search-block" class="">
+    				<form action="index.html" method="get" accept-charset="utf-8">
+    					<div><input type="text" name="search" value="" id="search"></div>
+    					<div><input type="submit" name="submit_search" value="Search" id="submit_search"></div>
+    				</form>
+    			</div>
+			    {% block content %}{% endblock %}
 			</div>
-			{% block content %}{% endblock %}
+			<div id="sidebar" class="column last">
 			{% block sidebar %}{% endblock %}
+			</div>
 		</div>
 		<div id="footer" class="clear">
 			<ul id="footer-nav">

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title_block %}code-detail{% endblock %}
+
+{% block content %}
+<ul>
+{% for code in code_list %}
+    <h3><a href="{% url code_detail code.id %}">{{code.title}}</a></h3>
+    <small>{{code.author.username}}</small>
+    {% if code.description %}
+        <p>{{code.description|truncatewords:"20"}}</p>
+    {% else %}
+        <p>This code is missing a description</p>
+    {% endif %}
+    
+{% endfor %}
+</ul>           
+{% endblock %}
+
+{% block sidebar %}
+    {% include "includes/default_sidebar.html" %}
+{% endblock %}

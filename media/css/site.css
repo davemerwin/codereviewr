@@ -1,17 +1,11 @@
 /* -----------------------------------------------------------------------
 
-   Staterkit CSS V.02
+   codereviewr
    http://code.google.com/p/starterkit/
    
    * Copyright (c) Dave Merwin 2007 - 2008. MIT Liscense
    
 ----------------------------------------------------------------------- */
-
-/* =FORDEV
------------------------------------------------------------------------ */
-#demo-nav {background:black; width:100%; list-style:none; padding:5px 0 5px 5px; color:#fff;}
-#demo-nav li {display:inline; margin:0 10px;}
-#demo-nav a {color:orange;}
 
 /* =GENERAL
 ----------------------------------------------------------------------- */
@@ -20,23 +14,21 @@
 /* Just for Opera, but hide from MacIE */
 /*\*/html>body .mir { letter-spacing : normal; text-indent : -999em; overflow : hidden;}
 /* End of hack */
-
-/* =FOR DEV NAV
------------------------------------------------------------------------ */
-#demo-nav {background:#000; list-style:none;}
-#demo-nav li {display:inline; margin:0 20px; line-height:36px; height:36px;}
-#demo-nav a, #demo-nav a:visited {color:#FD9B00; text-decoration:none;}
-#demo-nav a:hover, #demo-nav a:active {color:#fff;}
+p.mir {line-height:0px;}
 
 /* =LAYOUT
 ----------------------------------------------------------------------- */
-#header {position:relative; margin:0 0 18px 0;}
+body {background:#D9D9D9;}
+#header {position:relative; background:#808080;}
 
 /*Content*/
-#cont-col2 {padding:40px 40px 30px; background:#ccc;}
+#content {background:#F2F2F2;}
 .sidebar-note {margin:18px 0 10px 0;}
 #cont-col1 img {padding:5px; border:1px solid #ccc; background:#efefef;}
 .featured-image {margin:18px auto; display:block;}
+
+#page-content {width:670px; padding:10px 0 10px 10px;}
+#sidebar {background:#B2B2B2; padding:10px; width:240px;}
 
 /* Footer */
 #footer {border-top:1px dotted #ccc; padding:32px 0 0 0; margin:32px 0 0 0;}
@@ -45,11 +37,11 @@
 
 /* =NAV
 ----------------------------------------------------------------------- */
-#header-nav {list-style:none; background:#ccc;}
-#header-nav li {width:100px; height:32px; line-height:32px; float:left; background:#bbb;}
+#header-nav {list-style:none; position:absolute; top:10px; right:10px;}
+#header-nav li {display:inline;}
 #header-nav li a.current-section {background:#000; color:#fff;}
-#header-nav li a {width:100px; height:32px; display:block; text-align:center; line-height:32px; background:#efefef; text-decoration:none; font-weight:bold;}
-#header-nav li a:hover {background:transparent;}
+#header-nav li a {text-align:center; color:#fff; width:auto; padding:4px 5px; margin:0 2px 0 0; background:#4D4D4D; text-decoration:none; font-weight:bold;}
+#header-nav li a:hover {background:#fff; color:#4D4D4D;}
 
 #breadcrumb {width:100%; list-style:none;}
 #breadcrumb li {display:inline; margin:0 10px 0 0;}
@@ -60,7 +52,7 @@
 
 /* =FORMS
 ----------------------------------------------------------------------- */
-#search-block {position:absolute; top:0; right:0; text-align:right;}
+#search-block {height:18px;}
 #search-block div, #email-signup div {display:inline;}
 #submit_search {margin:0 0 0 10px;}
 

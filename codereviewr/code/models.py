@@ -15,10 +15,10 @@ class Code(models.Model):
     version = models.CharField(blank=True, max_length=100)
     is_public = models.BooleanField(default=True)
     created = models.DateTimeField(default=datetime.now)
-    updated = models.DateTimeField(blank=True)
+    updated = models.DateTimeField(blank=True, default=datetime.now)
 
     def __unicode__(self):
-        return "%s by %s" % (self.title, self.author.get_name())
+        return "%s by %s" % (self.title, self.author.get_full_name())
 
     class Admin:
         list_display = ('title','author','is_public','created')

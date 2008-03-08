@@ -19,22 +19,21 @@
 </head>
 <body class="reset" id="{% block body_id_block %}{% endblock %}">
 	<p id="content-skip" class="mir reset"><a href="#content" title="Skip To Content" class="mir">Skip To Content</a></p>
-	<div id="wrap" class="container">
 		<div id="header" class="clearfix">
-			<h2>CodeReviewr</h2>
-			<h3>There is always someone smarter than you.</h3>
-			<ul id="header-nav" class="reset span-24 clearfix">
+			<h2 class="reset">CodeReviewr</h2>
+			<ul id="header-nav" class="reset clearfix">
 				<li><a href="" title="" class="active">Home</a></li>
 				<li><a href="" title="" class="">About</a></li>
 			</ul>
-			<div id="search-block" class="span-7">
+</div>
+<div id="wrap" class="container">
+		<div id="content" class="clear">
+		    <div id="search-block" class="span-7">
 				<form action="index.html" method="get" accept-charset="utf-8">
 					<div><input type="text" name="search" value="" id="search"></div>
 					<div><input type="submit" name="submit_search" value="Search" id="submit_search"></div>
 				</form>
 			</div>
-		</div>
-		<div id="content" class="clear">
 			{% block content %}{% endblock %}
 			{% block sidebar %}{% endblock %}
 		</div>

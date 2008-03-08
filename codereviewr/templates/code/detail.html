@@ -3,14 +3,14 @@
 {% block title_block %}code-detail{% endblock %}
 
 {% block content %}
-            <h1>{{code.title}}</h1>
-            <div id="meta">
-                {{code.author.username}}
-                {{code.description}}
-            </div>
-            <div id="code">
-                {{code.code}}
-            </div>            
+	<h1>{{code.title}}</h1>
+	<div id="meta">
+		{{code.author.username}}
+		{{code.description}}
+	</div>
+	<div id="code">
+		{{code.code}}
+	</div>            
 {% endblock %}
 
 {% block sidebar %}

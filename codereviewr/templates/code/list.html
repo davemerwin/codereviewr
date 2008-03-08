@@ -5,7 +5,7 @@
 {% block content %}
 <ul>
 {% for code in code_list %}
-    <h3>{{code.title}}</h3>
+    <h3><a href="{% url code_detail code.id %}">{{code.title}}</a></h3>
     <small>{{code.author.username}}</small>
     {% if code.description %}
         <p>{{code.description|truncatewords:"20"}}</p>

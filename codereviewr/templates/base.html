@@ -9,10 +9,11 @@
 	<meta name="author" content="Dave Merwin">
 	<!-- Date: 2007-12-12 -->
 	<!-- Framework CSS -->
-   <link rel="stylesheet" href="{{MEDIA_URL}}css/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="{{MEDIA_URL}}css/site.css" type="text/css" media="screen, projection">
-   <link rel="stylesheet" href="{{MEDIA_URL}}css/print.css" type="text/css" media="print">	
-   <!--[if IE]><link rel="stylesheet" href="{{MEDIA_URL}}css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="{{MEDIA_URL}}css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="{{MEDIA_URL}}css/site.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="{{MEDIA_URL}}css/pygments.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="{{MEDIA_URL}}css/print.css" type="text/css" media="print">	
+	<!--[if IE]><link rel="stylesheet" href="{{MEDIA_URL}}css/ie.css" type="text/css" media="screen, projection"><![endif]-->
 	
 	<script type="text/javascript" src="{{MEDIA_URL}}js/jquery-1.2.3.js"></script>
 	<script type="text/javascript" src="{{MEDIA_URL}}js/site.settings.js"></script>
@@ -31,13 +32,13 @@
 </div>
 <div id="wrap" class="container">
 		<div id="content" class="clearfix">
-		    <div id="page-content" class="column">
-		        <div id="search-block" class="">
-    				<form action="index.html" method="get" accept-charset="utf-8">
-    					<div><input type="text" name="search" value="" id="search"></div>
-    					<div><input type="submit" name="submit_search" value="Search" id="submit_search"></div>
-    				</form>
-    			</div>
+			<div id="page-content" class="column">
+				<div id="search-block" class="">
+					<form action="index.html" method="get" accept-charset="utf-8">
+						<div><input type="text" name="search" value="" id="search"></div>
+						<div><input type="submit" name="submit_search" value="Search" id="submit_search"></div>
+					</form>
+				</div>
 			    {% block content %}{% endblock %}
 			</div>
 			<div id="sidebar" class="column last">

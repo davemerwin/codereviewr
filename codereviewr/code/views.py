@@ -28,7 +28,8 @@ def code_list(request):
     return object_list(
         request,
         queryset=codes,
+        template_name='code/list.html',
         template_object_name='code',
-        paginate_by=50
+        paginate_by=50,
     )
     

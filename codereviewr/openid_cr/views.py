@@ -13,7 +13,7 @@ from openid.consumer.discover import DiscoveryFailure
 try:
     from openid.yadis import xri
 except:
-    from yadis import xriœ
+    from yadis import xri
 
 
 from util import OpenID, DjangoOpenIDStore, from_openid_response
@@ -109,7 +109,7 @@ def begin(request, sreg=None, extension_args=None, redirect_to=None,
             'form': form_signin,
             'action': request.path,
             'logo': request.path + 'logo/',
-            'openids': request.session['openids'],
+            #'openids': request.session['openids'],
         })
     
 def complete(request, on_success=None, on_failure=None):

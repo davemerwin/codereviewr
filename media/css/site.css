@@ -22,7 +22,7 @@ body {background:#D9D9D9;}
 #header {position:relative; background:#808080;}
 
 /*Content*/
-#content {background:#F2F2F2;}
+#content {background:url(../imgs/codereviewr_bgnd.png) top left repeat-y #F2F2F2;}
 .sidebar-note {margin:18px 0 10px 0;}
 #cont-col1 img {padding:5px; border:1px solid #ccc; background:#efefef;}
 .featured-image {margin:18px auto; display:block;}

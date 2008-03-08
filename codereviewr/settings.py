@@ -12,9 +12,9 @@ ADMINS = (
 MANAGERS = ADMINS
 
 DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-DATABASE_NAME = 'codereviewr'             # Or path to database file if using sqlite3.
+DATABASE_NAME = 'davemerwin_cr'             # Or path to database file if using sqlite3.
 DATABASE_USER = 'codereviewr'             # Not used with sqlite3.
-DATABASE_PASSWORD = 'codereviewr'         # Not used with sqlite3.
+DATABASE_PASSWORD = 'c0d3r3v13wr'         # Not used with sqlite3.
 DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
 

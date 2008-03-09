@@ -1,7 +1,13 @@
 from django.conf.urls.defaults import *
 from django.views.generic.simple import direct_to_template, redirect_to
 from codereviewr.settings import PROJECT_PATH, DEBUG
+from codereviewr.feeds import *
 import os
+
+#feeds dictionary
+feeds = {
+	'latest': LatestEntries,
+}
 
 urlpatterns = patterns('',
     (r'^code/', include('codereviewr.code.urls')),
@@ -9,6 +15,9 @@ urlpatterns = patterns('',
      
     #for homepage - testing
     (r'^$', direct_to_template, {'template': 'homepage.html'}),
+	
+	#for feeds
+	(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),
 )
 
 if DEBUG:

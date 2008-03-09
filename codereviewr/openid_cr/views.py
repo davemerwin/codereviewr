@@ -76,7 +76,6 @@ def begin(request, sreg=None, extension_args=None, redirect_to=None,
             trust_root = getattr(
                     settings, 'OPENID_TRUST_ROOT', get_url_host(request) + '/'
                 )
-        
             redirect_to = redirect_to or getattr(
                 settings, 'OPENID_REDIRECT_TO',
                 # If not explicitly set, assume current URL with complete/ appended

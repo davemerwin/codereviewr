@@ -1,4 +1,4 @@
-from django.http import Http404, HttpResponseRedirect
+﻿from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.views.generic.list_detail import object_list, object_detail

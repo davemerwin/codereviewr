@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import *
+﻿from django.conf.urls.defaults import *
 from django.views.generic.simple import direct_to_template, redirect_to
 from codereviewr.settings import PROJECT_PATH, DEBUG
 from codereviewr.feeds import *

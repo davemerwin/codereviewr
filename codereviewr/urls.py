@@ -16,7 +16,6 @@ urlpatterns = patterns('',
     #for homepage - testing
     (r'^$', direct_to_template, {'template': 'homepage.html'}),
 	
-	#for feeds
 	(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),
 )
 

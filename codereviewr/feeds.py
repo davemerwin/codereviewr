@@ -1,4 +1,4 @@
-from django.contrib.syndication.feeds import Feed
+﻿from django.contrib.syndication.feeds import Feed
 from codereviewr.code.models import Code
 
 class LatestEntries(Feed):

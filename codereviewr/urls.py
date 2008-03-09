@@ -12,11 +12,9 @@ feeds = {
 urlpatterns = patterns('',
     (r'^code/', include('codereviewr.code.urls')),
     (r'^admin/', include('django.contrib.admin.urls')),
-     
+	(r'^feeds/(?P<url>.*/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),
     #for homepage - testing
     (r'^$', direct_to_template, {'template': 'homepage.html'}),
-	
-	(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),
 )
 
 if DEBUG:

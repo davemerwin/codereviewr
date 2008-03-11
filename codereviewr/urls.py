@@ -1,12 +1,14 @@
 ﻿from django.conf.urls.defaults import *
 from django.views.generic.simple import direct_to_template, redirect_to
 from codereviewr.settings import PROJECT_PATH, DEBUG
-from codereviewr.feeds import CodeFeed
+from codereviewr.feeds import *
+#from django.contrib.comments.feeds import *
 import os
 
 #feeds dictionary
 feeds = {
-	'code': CodeFeed,
+	'user': UserFeed,
+	'comments':LatestComments,
 }
 
 urlpatterns = patterns('',

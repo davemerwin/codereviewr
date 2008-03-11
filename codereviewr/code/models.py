@@ -1,6 +1,7 @@
 ﻿from django.db import models
 from django.contrib.auth.models import User
 from datetime import datetime
+from pygments.lexers import get_all_lexers
 
 class Code(models.Model):
     """
@@ -29,3 +30,11 @@ class Code(models.Model):
     class Admin:
         list_display = ('title','author','is_public','created')
 
+class Languages(models.Model):
+	"""
+	Languages model for code snippets language field
+	"""
+	language = models.CharField(max_length=50, unique=True)
+		
+	class Admin:
+		pass

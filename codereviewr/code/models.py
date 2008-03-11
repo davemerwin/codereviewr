@@ -19,7 +19,10 @@ class Code(models.Model):
 
     def __unicode__(self):
         return "%s by %s" % (self.title, self.author.get_full_name())
-
+		
+	def get_absolute_url(self):
+		return "http://localhost:8000/code/"
+		
     class Meta:
         verbose_name_plural = 'code'
 

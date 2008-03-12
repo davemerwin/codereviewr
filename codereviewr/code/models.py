@@ -19,7 +19,10 @@ Core code model for code snippets
  
     def __unicode__(self):
         return "%s by %s" % (self.title, self.author.get_full_name())
- 
+
+    def get_absolute_url(self):
+        return "/code/%i" % self.id
+
     class Meta:
         verbose_name_plural = 'code'
  

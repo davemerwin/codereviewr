@@ -2,7 +2,7 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.views.generic.list_detail import object_list, object_detail
-from codereviewr.code.models import Code
+from codereviewr.code.models import Code, Language
 from pygments import highlight
 from pygments.formatters import HtmlFormatter
 from pygments.lexers import get_lexer_for_filename
@@ -41,3 +41,7 @@ Lists all code flagged as is_public.
         template_object_name='code',
         paginate_by=50,
     )
+
+def refresh_languages(request):
+    Language.load_languages()
+    return HttpResponseRedirect('/admin/code/language/')

@@ -1,12 +1,11 @@
 ﻿from django.db import models
 from django.contrib.auth.models import User
 from datetime import datetime
-from pygments.lexers import get_all_lexers
-
+ 
 class Code(models.Model):
     """
-    Core code model for code snippets
-    """
+Core code model for code snippets
+"""
     title = models.CharField(max_length=200)
     code = models.TextField(help_text="")
     author = models.ForeignKey(User)
@@ -17,32 +16,29 @@ class Code(models.Model):
     is_public = models.BooleanField(default=True)
     created = models.DateTimeField(default=datetime.now)
     updated = models.DateTimeField(blank=True, default=datetime.now)
-
+ 
     def __unicode__(self):
         return "%s by %s" % (self.title, self.author.get_full_name())
-		
-	def get_absolute_url(self):
-		return "http://localhost:8000/code/"
-		
+ 
     class Meta:
         verbose_name_plural = 'code'
-
+ 
     class Admin:
         list_display = ('title','author','is_public','created')
-
+ 
 class Language(models.Model):
     """
-    Lookup table for languages, generate via Pygments
-    """
+Lookup table for languages, generate via Pygments
+"""
     name = models.CharField(max_length=100)
     
     class Admin:
         list_display = ('name',)
         ordering = ('name',)
-
+ 
     def __unicode__(self):
         return self.name
-
+ 
     @classmethod
     def load_languages(cls):
         from pygments.lexers import LEXERS

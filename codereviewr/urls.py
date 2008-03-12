@@ -17,6 +17,8 @@ urlpatterns = patterns('',
     # Admin
     (r'^admin/code/language/refresh/$', 'code.views.refresh_languages'),
     (r'^admin/', include('django.contrib.admin.urls')),
+
+    # OpenID
     (r'^openid/$', 'openid_cr.views.begin', {'redirect_to': '/openid/complete/'}),
     (r'^openid/complete/$', 'openid_cr.views.complete'),
     (r'^openid/signout/$', 'openid_cr.views.signout'),

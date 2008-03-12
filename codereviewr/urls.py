@@ -13,6 +13,9 @@ feeds = {
 
 urlpatterns = patterns('',
     (r'^code/', include('codereviewr.code.urls')),
+    
+    # Admin
+    (r'^admin/code/language/refresh/$', 'code.views.refresh_languages'),
     (r'^admin/', include('django.contrib.admin.urls')),
      
     #for homepage - testing

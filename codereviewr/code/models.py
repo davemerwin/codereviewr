@@ -30,11 +30,23 @@ class Code(models.Model):
     class Admin:
         list_display = ('title','author','is_public','created')
 
-class Languages(models.Model):
-	"""
-	Languages model for code snippets language field
-	"""
-	language = models.CharField(max_length=50, unique=True)
-		
-	class Admin:
-		pass
+class Language(models.Model):
+    """
+    Lookup table for languages, generate via Pygments
+    """
+    name = models.CharField(max_length=100)
+    
+    class Admin:
+        list_display = ('name',)
+        ordering = ('name',)
+
+    def __unicode__(self):
+        return self.name
+
+    @classmethod
+    def load_languages(cls):
+        from pygments.lexers import LEXERS
+        languages = [item[1] for item in LEXERS.itervalues()]
+        cls.objects.all().delete() # purge all languages
+        for l in languages:
+            Language(name=l).save() # add language

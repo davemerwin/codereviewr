@@ -20,5 +20,9 @@ class Code(models.Model):
     def __unicode__(self):
         return "%s by %s" % (self.title, self.author.get_full_name())
 
+    class Meta:
+        verbose_name_plural = 'code'
+
     class Admin:
         list_display = ('title','author','is_public','created')
+

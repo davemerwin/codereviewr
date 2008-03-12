@@ -29,6 +29,7 @@ body {background:#808080;}
 .featured-image {margin:18px auto; display:block;}
 
 #page-content {width:650px; padding:10px 10px 10px 20px;}
+#page-content #source {overflow:auto; padding:0 20px; background:#fff;}
 #sidebar {background:#B2B2B2; padding:10px; width:240px;}
 
 .menu {padding:10px; background:#CCCCCC; margin:0 0 10px 0; list-style:none;}

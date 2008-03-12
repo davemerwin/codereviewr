@@ -45,6 +45,12 @@ body {background:#808080;}
 #header-nav li {display:inline;}
 #header-nav li a.current-section {background:#000; color:#fff;}
 #header-nav li a {text-align:center; color:#fff; width:auto; padding:4px 5px; margin:0 2px 0 0; background:#4D4D4D; text-decoration:none; font-weight:bold;}
+
+/* OpenID Sign In */
+#header-nav form {display:inline;}
+#header-nav form label {text-align:center; color:#fff; width:auto; padding:4px 5px; margin:0 2px 0 0; text-decoration:none; font-weight:bold;}
+#id_openid_url {background: url('../imgs/login-bg.gif') no-repeat; background-position: 0 50%; padding-left: 16px;}
+
 #header-nav li a:hover {background:#fff; color:#4D4D4D;}
 
 #breadcrumb {width:100%; list-style:none;}

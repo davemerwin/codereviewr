@@ -64,6 +64,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.doc.XViewMiddleware',
+    'codereviewr.openid_cr.middleware.OpenIDMiddleware',
 )
 
 ROOT_URLCONF = 'codereviewr.urls'
@@ -87,6 +88,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'codereviewr.code',
+    'codereviewr.openid_cr',
 )
 
 # For local development setting overrides

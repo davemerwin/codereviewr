@@ -22,6 +22,10 @@
     <div id="header" class="clearfix">
         <h2 class="reset">CodeReviewr</h2>
         <ul id="header-nav" class="reset clearfix">
+        <form id="openid_login" action="/openid/" method="POST">
+        <li><label for="openid_url">OpenID</label><input type="text" id="id_openid_url" class="required openid" name="openid_url" size=20/></li>
+        <li><input type="submit" value="Sign In"/></li>
+        </form>
         <li><a href="" title="" class="active">Home</a></li>
         <li><a href="" title="" class="">About</a></li>
         <li><a href="" title="" class="">My Account</a></li>

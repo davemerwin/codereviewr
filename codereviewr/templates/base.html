@@ -70,7 +70,9 @@
             {% block content %}{% endblock %}
         </div>
         <div id="sidebar" class="column last">
-            {% block sidebar %}{% endblock %}
+            {% block sidebar %}
+				{% include "includes/default_sidebar.html" %}
+			{% endblock %}
         </div>
         </div>
     </div>

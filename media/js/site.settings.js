@@ -7,6 +7,7 @@
  $(document).ready(function(){
     $('.close').click(function() {
         $(this).parent.close();
+        $(this).parent.('.loginout').toggle();
         return false;
     });
  });

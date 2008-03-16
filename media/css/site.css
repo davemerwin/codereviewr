@@ -49,8 +49,6 @@ body {background:#223239;}
 /* OpenID Sign In */
 #id_openid_url {background: url('../imgs/login-bg.gif') no-repeat; background-position: 0 50%; padding-left: 16px;}
 
-.logout {display:none;}
-
 #header-nav li a:hover {background:#fff; color:#4D4D4D;}
 
 #breadcrumb {width:100%; list-style:none;}
@@ -80,5 +78,3 @@ em {background:none;}
 #submit_search {margin:0 0 0 10px;}
 
 #email-signup #sign_up {margin:0 0 9px 0; width:100%;}
-
-#login {margin:0 auto;}

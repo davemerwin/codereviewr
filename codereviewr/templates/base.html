@@ -11,38 +11,23 @@
     <link rel="stylesheet" href="{{MEDIA_URL}}css/screen.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="{{MEDIA_URL}}css/site.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="{{MEDIA_URL}}css/pygments.css" type="text/css" media="screen, projection">
+        <link rel="stylesheet" href="{{MEDIA_URL}}css/thickbox.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="{{MEDIA_URL}}css/print.css" type="text/css" media="print">	
     <!--[if IE]><link rel="stylesheet" href="{{MEDIA_URL}}css/ie.css" type="text/css" media="screen, projection"><![endif]-->
 
     <script type="text/javascript" src="{{MEDIA_URL}}js/jquery-1.2.3.js"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}js/thickbox.js"></script>
     <script type="text/javascript" src="{{MEDIA_URL}}js/site.settings.js"></script>
 </head>
 <body class="reset" id="{% block body_id_block %}{% endblock %}">
     <p id="content-skip" class="mir reset"><a href="#content" title="Skip To Content" class="mir">Skip To Content</a></p>
     <div id="header" class="clearfix">
         <h2 class="reset">CodeReviewr</h2>
-        <div id="login" class="span-10">
-            <div class="col1 span-5 column">
-                <form id="openid_login" action="/openid/" method="POST">
-                <li><label for="openid_url">OpenID</label><input type="text" id="id_openid_url" class="required openid" name="openid_url" size=20/></li>
-                <li><input type="submit" value="Sign In"/></li>
-                </form>
-            </div>
-            <div class="col2 span-5 column last">
-                <form action="login_submit" method="get" accept-charset="utf-8">
-                    <dl>
-                        <label for="username">Username</label><input type="text" name="username" value="" id="username">
-                        <label for="password">Password</label><input type="text" name="password" value="" id="password">
-                        <input type="submit" value="Submit">
-                    </dl>
-                </form>
-            </div>
-        </div>
         <ul id="header-nav" class="reset clearfix">
         <li><a href="" title="" class="active">Home</a></li>
         <li><a href="" title="" class="">About</a></li>
         <li><a href="" title="" class="">My Account</a></li>
-        <li><a href="" title="" class="loginout">Log Out</a></li>
+        <li><a href="login/?height=160&amp;width=250&amp;modal=true" class="thickbox" title="Please Sign In">login</a></li>
         <li><a href="" title="" class="">Help</a></li>
         </ul>
     </div>
@@ -92,7 +77,12 @@
     <div id="footer" class="clear">
         <div class="container clearfix">
         <div class="col1 span-18 column">
-        hello
+            <h4>Code Resources</h4>
+            <ul>
+                <li><a href="" title="">Python</a></li>
+                <li><a href="" title="">PHP</a></li>
+                <li><a href="" title="">Java</a></li>
+            </ul>
         </div>
         <div class="col2 span-6 column last">
         </div>

@@ -35,7 +35,7 @@ body {background:#223239;}
 .menu {padding:10px; background:#CCCCCC; margin:0 0 10px 0; list-style:none;}
 
 /* Footer */
-#footer {border-top:4px solid #587E98; padding:0; margin:0; background:;}
+#footer {border-top:4px solid #587E98; padding:18px 0; margin:0;}
 #footer-nav {width:100%; text-align:center; list-style:none;}
 #footer-nav li {display:inline; margin:0 10px 0;}
 
@@ -47,9 +47,9 @@ body {background:#223239;}
 #header-nav li a {text-align:center; color:#fff; width:auto; padding:4px 5px; margin:0 2px 0 0; background:#223239; text-decoration:none; font-weight:bold;}
 
 /* OpenID Sign In */
-#header-nav form {display:inline;}
-#header-nav form label {text-align:center; color:#fff; width:auto; padding:4px 5px; margin:0 2px 0 0; text-decoration:none; font-weight:bold;}
 #id_openid_url {background: url('../imgs/login-bg.gif') no-repeat; background-position: 0 50%; padding-left: 16px;}
+
+.logout {display:none;}
 
 #header-nav li a:hover {background:#fff; color:#4D4D4D;}
 
@@ -64,6 +64,8 @@ a {text-decoration:none; color:#59CBFE; font-weight:bold;}
 .decrease {font-size:90%;}
 #sidebar h4 {text-transform:uppercase; padding:4px 8px; background:#999999; color:#4D4D4D; margin:0 0 10px 0;}
 .menu {font-size:1.4em;}
+
+#footer h4 {color:#D0DCE6;}
 
 #sidebar h4 {color:#D0DCE6; background:#7A9DBB;}
 

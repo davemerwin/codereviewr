@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>CodeReviewr Login</title>
+    <meta name="generator" content="TextMate http://macromates.com/">
+    <meta name="author" content="Dave Merwin">
+    <!-- Date: 2007-12-12 -->
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="{{MEDIA_URL}}css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="{{MEDIA_URL}}css/site.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="{{MEDIA_URL}}css/pygments.css" type="text/css" media="screen, projection">
+        <link rel="stylesheet" href="{{MEDIA_URL}}css/thickbox.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="{{MEDIA_URL}}css/print.css" type="text/css" media="print">	
+    <!--[if IE]><link rel="stylesheet" href="{{MEDIA_URL}}css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jquery-1.2.3.js"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}js/thickbox.js"></script>
+    <script type="text/javascript" src="{{MEDIA_URL}}js/site.settings.js"></script>
+</head>
+<body>
+
+<div id="login">
+        <form id="openid_login" action="/openid/" method="POST">
+            <label for="openid_url">OpenID</label><input type="text" id="id_openid_url" class="required openid" name="openid_url" size=20/>
+        <input type="submit" value="Sign In"/>
+        </form>
+        <form action="login_submit" method="get" accept-charset="utf-8">
+                <label for="username">Username</label><input type="text" name="username" value="" id="username">
+                <label for="password">Password</label><input type="text" name="password" value="" id="password">
+                <input type="submit" value="Submit">
+        </form>
+        <p><a href="" class="close">Cancel</a></p>
+    </div>
+</div>
+
+</body>
+</html>

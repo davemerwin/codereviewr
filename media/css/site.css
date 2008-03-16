@@ -18,24 +18,24 @@ p.mir {line-height:0px;}
 
 /* =LAYOUT
 ----------------------------------------------------------------------- */
-body {background:#808080;}
-#header {position:relative; background:#808080;}
+body {background:#223239;}
+#header {position:relative; background:#587E98;}
 
 /*Content*/
-#content {background:#D9D9D9; border-top:4px solid #999;}
+#content {background:#D0DCE6; border-top:4px solid #223239;}
 #content .container {background:url(../imgs/codereviewr_bgnd.png) top left repeat-y;}
 .sidebar-note {margin:18px 0 10px 0;}
 #cont-col1 img {padding:5px; border:1px solid #ccc; background:#efefef;}
 .featured-image {margin:18px auto; display:block;}
 
-#page-content {width:650px; padding:10px 10px 10px 20px;}
+#page-content {width:650px; padding:10px 10px 10px 20px; background:#EBF2F2;}
 #page-content #source {overflow:auto; padding:0 20px; background:#fff;}
-#sidebar {background:#B2B2B2; padding:10px; width:240px;}
+#sidebar {background:#587E98; padding:10px; width:240px;}
 
 .menu {padding:10px; background:#CCCCCC; margin:0 0 10px 0; list-style:none;}
 
 /* Footer */
-#footer {border-top:4px solid #ccc; padding:0; margin:0; background:;}
+#footer {border-top:4px solid #587E98; padding:0; margin:0; background:;}
 #footer-nav {width:100%; text-align:center; list-style:none;}
 #footer-nav li {display:inline; margin:0 10px 0;}
 
@@ -44,7 +44,7 @@ body {background:#808080;}
 #header-nav {list-style:none; position:absolute; top:10px; right:10px;}
 #header-nav li {display:inline;}
 #header-nav li a.current-section {background:#000; color:#fff;}
-#header-nav li a {text-align:center; color:#fff; width:auto; padding:4px 5px; margin:0 2px 0 0; background:#4D4D4D; text-decoration:none; font-weight:bold;}
+#header-nav li a {text-align:center; color:#fff; width:auto; padding:4px 5px; margin:0 2px 0 0; background:#223239; text-decoration:none; font-weight:bold;}
 
 /* OpenID Sign In */
 #header-nav form {display:inline;}
@@ -55,18 +55,28 @@ body {background:#808080;}
 
 #breadcrumb {width:100%; list-style:none;}
 #breadcrumb li {display:inline; margin:0 10px 0 0;}
+.menu {background:#D0DCE6;}
 
 /* =TYPOGROPHY
 ----------------------------------------------------------------------- */
-a {text-decoration:none;}
+a {text-decoration:none; color:#59CBFE; font-weight:bold;}
+#sidebar a {color:#587E98;}
 .decrease {font-size:90%;}
 #sidebar h4 {text-transform:uppercase; padding:4px 8px; background:#999999; color:#4D4D4D; margin:0 0 10px 0;}
 .menu {font-size:1.4em;}
 
+#sidebar h4 {color:#D0DCE6; background:#7A9DBB;}
+
+h1 {color:#223239; font-size:200%;}
+
+em {background:none;}
+
 /* =FORMS
 ----------------------------------------------------------------------- */
-#search-block {height:54px; line-height:54px; margin:-10px -20px 18px -20px; text-align:center; background:#E5E5E5;}
+#search-block {height:54px; line-height:54px; margin:-10px -20px 18px -20px; text-align:center; background:#7A9DBB;}
 #search-block div, #email-signup div {display:inline;}
 #submit_search {margin:0 0 0 10px;}
 
 #email-signup #sign_up {margin:0 0 9px 0; width:100%;}
+
+#login {margin:0 auto;}

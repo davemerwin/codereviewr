@@ -46,9 +46,6 @@ body {background:#223239;}
 #header-nav li a.current-section {background:#000; color:#fff;}
 #header-nav li a {text-align:center; color:#fff; width:auto; padding:4px 5px; margin:0 2px 0 0; background:#223239; text-decoration:none; font-weight:bold;}
 
-/* OpenID Sign In */
-#id_openid_url {background: url('../imgs/login-bg.gif') no-repeat; background-position: 0 50%; padding-left: 16px;}
-
 #header-nav li a:hover {background:#fff; color:#4D4D4D;}
 
 #breadcrumb {width:100%; list-style:none;}
@@ -78,3 +75,9 @@ em {background:none;}
 #submit_search {margin:0 0 0 10px;}
 
 #email-signup #sign_up {margin:0 0 9px 0; width:100%;}
+
+#login input {background:#fff;}
+#login fieldset {background:#EBF2F2;}
+.close {background:#fff; border:1px solid #ccc; padding:2px 4px; margin:0 auto; width:auto;}
+/* OpenID Sign In */
+#login input#id_openid_url {background: url('../imgs/login-bg.gif') no-repeat #fff; background-position: 0 50%; padding-left: 16px;}

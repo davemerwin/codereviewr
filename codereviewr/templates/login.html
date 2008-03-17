@@ -20,18 +20,33 @@
     <script type="text/javascript" src="{{MEDIA_URL}}js/site.settings.js"></script>
 </head>
 <body>
-
-<div id="login">
+<div id="login" class="span-14 clearfix">
+    <div class="span-6 append-1 column">
         <form id="openid_login" action="/openid/" method="POST">
+            <fieldset>
             <label for="openid_url">OpenID</label><input type="text" id="id_openid_url" class="required openid" name="openid_url" size=20/>
         <input type="submit" value="Sign In"/>
+        </fieldset>
         </form>
         <form action="login_submit" method="get" accept-charset="utf-8">
+            <fieldset>
                 <label for="username">Username</label><input type="text" name="username" value="" id="username">
                 <label for="password">Password</label><input type="text" name="password" value="" id="password">
                 <input type="submit" value="Submit">
+                </fieldset>
         </form>
-        <p><a href="" class="close">Cancel</a></p>
+    </div>
+    <div class="span-7 column last">
+        <h3>Wanna Contribute?</h3>
+        <h4><a href="" title="">Register for an account</a></h4>
+        
+        <h4>Forgot Your Login?</h4>
+        <p>Have your <a href="" title="">login emailed to you</a>.</p>
+        
+        <h4>Forgot your password?</h4>
+        <p>Have your <a href="" title="">password emailed to you</a>.</p>
+    </div>
+        <p class="reset clear"><a href="" class="close">Cancel</a></p>
     </div>
 </div>
 

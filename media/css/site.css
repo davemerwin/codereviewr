@@ -77,6 +77,7 @@ em {background:none;}
 #email-signup #sign_up {margin:0 0 9px 0; width:100%;}
 
 #login input {background:#fff;}
+#login a {color:#223239;}
 #login fieldset {background:#EBF2F2;}
 .close {background:#fff; border:1px solid #ccc; padding:2px 4px; margin:0 auto; width:auto;}
 /* OpenID Sign In */

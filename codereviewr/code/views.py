@@ -6,11 +6,23 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.views.generic.list_detail import object_list, object_detail
 from codereviewr.code.models import Code, Language
-from codereviewr.code.forms import CodeForm
 from pygments import highlight
 from pygments.formatters import HtmlFormatter
 from pygments.lexers import get_lexer_for_filename
- 
+
+#
+# FORMS
+#
+
+class CodeForm(ModelForm):
+    class Meta:
+        model = Code
+        fields = ('title', 'code', 'description', 'dependencies', 'version', 'is_public')
+
+#
+# VIEWS
+# 
+
 def code_detail(request, code_id):
     """
     Displays a single piece of code.
@@ -75,11 +87,3 @@ def refresh_languages(request):
     return HttpResponseRedirect('/admin/code/language/')
 
 
-#
-# FORMS
-#
-
-class CodeForm(ModelForm):
-    class Meta:
-        model = Code
-        fields = ('title', 'code', 'description', 'dependencies', 'version', 'is_public')

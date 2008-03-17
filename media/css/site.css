@@ -73,12 +73,13 @@ em {background:none;}
 #search-block {height:54px; line-height:54px; margin:-10px -20px 18px -20px; text-align:center; background:#7A9DBB;}
 #search-block div, #email-signup div {display:inline;}
 #submit_search {margin:0 0 0 10px;}
+.submit-bttn {border:1px solid #ccc; background:#fff; margin:10px 0 0 0;}
 
 #email-signup #sign_up {margin:0 0 9px 0; width:100%;}
 
 #login input {background:#fff;}
 #login a {color:#223239;}
-#login fieldset {background:#EBF2F2;}
+#login fieldset {background:#EBF2F2; border:1px solid #587E98;}
 .close {background:#fff; border:1px solid #ccc; padding:2px 4px; margin:0 auto; width:auto;}
 /* OpenID Sign In */
 #login input#id_openid_url {background: url('../imgs/login-bg.gif') no-repeat #fff; background-position: 0 50%; padding-left: 16px;}

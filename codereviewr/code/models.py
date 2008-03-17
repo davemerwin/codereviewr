@@ -4,8 +4,8 @@ from datetime import datetime
  
 class Code(models.Model):
     """
-Core code model for code snippets
-"""
+    Core code model for code snippets
+    """
     title = models.CharField(max_length=200)
     code = models.TextField(help_text="")
     author = models.ForeignKey(User)
@@ -21,7 +21,8 @@ Core code model for code snippets
         return "%s by %s" % (self.title, self.author.get_full_name())
 
     def get_absolute_url(self):
-        return "/code/%i" % self.id
+        return ('code_detail',[str(self.id)])
+    get_absolute_url = models.permalink(get_absolute_url)
 
     class Meta:
         verbose_name_plural = 'code'

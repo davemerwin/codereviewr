@@ -38,6 +38,9 @@ USE_I18N = True
 # Login URL
 LOGIN_URL = '/login/'
 
+# This is the number of days activation keys will remain valid after an account is registered.
+ACCOUNT_ACTIVATION_DAYS = 30
+
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = ''
@@ -88,9 +91,10 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.sites',
+    'django.contrib.sites',    
     'codereviewr.code',
     'codereviewr.openid_cr',
+    'codereviewr.registration',
 )
 
 # For local development setting overrides

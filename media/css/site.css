@@ -18,24 +18,24 @@ p.mir {line-height:0px;}
 
 /* =LAYOUT
 ----------------------------------------------------------------------- */
-body {background:#223239;}
+body {background:#fff; padding:0 0 36px 0;}
 #header {position:relative; background:#587E98;}
 
 /*Content*/
-#content {background:#D0DCE6; border-top:4px solid #223239;}
-#content .container {background:url(../imgs/codereviewr_bgnd.png) top left repeat-y;}
+#content {background:; border-top:4px solid #223239;}
+#content .container {/*background:url(../imgs/codereviewr_bgnd.png) top left repeat-y;*/}
 .sidebar-note {margin:18px 0 10px 0;}
 #cont-col1 img {padding:5px; border:1px solid #ccc; background:#efefef;}
 .featured-image {margin:18px auto; display:block;}
 
-#page-content {width:650px; padding:10px 10px 10px 20px; background:#EBF2F2;}
+#page-content {width:650px; padding:10px 10px 10px 20px; background:;}
 #page-content #source {overflow:auto; padding:0 20px; background:#fff;}
 #sidebar {background:#587E98; padding:10px; width:240px;}
 
 .menu {padding:10px; background:#CCCCCC; margin:0 0 10px 0; list-style:none;}
 
 /* Footer */
-#footer {border-top:4px solid #587E98; padding:18px 0; margin:0;}
+#footer {padding:40px inherit; background:#E8E9DE;}
 #footer-nav {width:100%; text-align:center; list-style:none;}
 #footer-nav li {display:inline; margin:0 10px 0;}
 

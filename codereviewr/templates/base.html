@@ -19,7 +19,7 @@
     <script type="text/javascript" src="{{MEDIA_URL}}js/thickbox.js"></script>
     <script type="text/javascript" src="{{MEDIA_URL}}js/site.settings.js"></script>
 </head>
-<body class="reset" id="{% block body_id_block %}{% endblock %}">
+<body id="{% block body_id_block %}{% endblock %}">
     <p id="content-skip" class="mir reset"><a href="#content" title="Skip To Content" class="mir">Skip To Content</a></p>
     <div id="header" class="clearfix">
         <h2 class="reset">CodeReviewr</h2>
@@ -74,9 +74,8 @@
         </div>
         </div>
     </div>
-    <div id="footer" class="clear">
-        <div class="container clearfix">
-        <div class="col1 span-18 column">
+    <div id="footer" class="clear container clearfix">
+        <div class="col1 span-17 prepend-1 column">
             <h4>Code Resources</h4>
             <ul>
                 <li><a href="" title="">Python</a></li>
@@ -84,8 +83,7 @@
                 <li><a href="" title="">Java</a></li>
             </ul>
         </div>
-        <div class="col2 span-6 column last">
-        </div>
+        <div class="col2 span-5 append-1 column last">
         </div>
     </div>
 </body>

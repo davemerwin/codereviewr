@@ -19,7 +19,10 @@ urlpatterns = patterns('',
 
     # account registration
     (r'^accounts/', include('registration.urls')),
-    
+
+    # Maybe we don't need the line of code above because this wire up registration,, the auth application's login, logout, and password change/reset
+    (r'^', include('registration.urls')),
+        
     #for homepage - testing
     (r'^$', direct_to_template, {'template': 'homepage.html'}),
 )

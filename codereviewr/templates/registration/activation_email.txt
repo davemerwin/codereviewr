@@ -1,2 +1,12 @@
-This is the email body
-Test..Please click on the email below to active your account
+This is a test.
+
+<p>This is used for the body of the activation email.</p>
+
+<p>The activation link looks like this http://site/activate/activation_key</p>
+<p>The <site> value comes from the field "domain" from the table django_site</p>
+<p>The <active> URL is catch in registration/urls.py
+
+<p>So, before you click the link, check the table auth_user and find your username. You'll see the field is_active=0
+
+http://{{site}}/activate/{{activation_key}}
+

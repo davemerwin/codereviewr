@@ -8,5 +8,5 @@ This is a test.
 
 <p>So, before you click the link, check the table auth_user and find your username. You'll see the field is_active=0
 
-http://{{site}}/activate/{{activation_key}}
+http://{{site}}/accounts/activate/{{activation_key}}
 

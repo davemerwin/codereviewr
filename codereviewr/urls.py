@@ -25,8 +25,9 @@ urlpatterns = patterns('',
     (r'^openid/complete/$', 'openid_cr.views.complete'),
     (r'^openid/signout/$', 'openid_cr.views.signout'),
     
-    (r'^login/$', direct_to_template, {'template': 'login.html'}),
-    
+    # account registration
+    (r'^accounts/', include('registration.urls')),
+
     #for homepage - testing
     (r'^$', direct_to_template, {'template': 'homepage.html'}),
 	

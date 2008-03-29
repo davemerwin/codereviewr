@@ -1,4 +1,4 @@
-This is a test.
+This is a test and will need to work on this email body.
 
 <p>This is used for the body of the activation email.</p>
 

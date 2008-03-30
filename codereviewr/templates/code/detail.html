@@ -3,12 +3,16 @@
 {% block title_block %}code-detail{% endblock %}
 
 {% block content %}
-	<h1>{{ code.title }}</h1>
+    {% if code.is_public %}
+        <h1 class="public">{{ code.title }}</h1>
+    {% else %}
+        <h1 class="private">{{ code.title }}</h1>
+    {% endif %}
 	<div id="meta">
 		{{ code.author.username }}
 		{{ code.description }}
 	</div>
-	<div id="source">
+	<div id="page-content">
 		{{ code.highlight|safe }}
 	</div>            
 {% endblock %}

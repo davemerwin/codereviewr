@@ -10,7 +10,7 @@
 /* =GENERAL
 ----------------------------------------------------------------------- */
 .reset {margin:0; padding:0;}
-.mir { letter-spacing : -1000em; }
+.mir {letter-spacing : -1000em; }
 /* Just for Opera, but hide from MacIE */
 /*\*/html>body .mir { letter-spacing : normal; text-indent : -999em; overflow : hidden;}
 /* End of hack */
@@ -18,59 +18,30 @@ p.mir {line-height:0px;}
 
 /* =LAYOUT
 ----------------------------------------------------------------------- */
-body {background:#fff; padding:0 0 36px 0; margin:0;}
-#header {background:#514636;}
-#header .container {position:relative; }
+body {background:#fff;}
+#nav, #search, #meta, #page-content {padding:6px 40px; margin:0; position:relative;}
+#nav {background:url(../imgs/site_navbar_bgnd.png) bottom left repeat-x #C5AA87;}
+#nav ul {list-style:none; text-align:right; float:right; width:390px;}
+#nav li {line-height:26px; height:26px; margin:10px; display:inline;}
+#nav li a {background:url(../imgs/nav_bgnd.png) top left no-repeat; line-height:26px; height:26px; display:block; width:68px; float:left; text-align:center; margin:5px 0 5px 10px; font-variant:small-caps; font-weight:bold; color:#6C5B3C;}
+#nav li a:hover {background:url(../imgs/nav_bgnd.png) bottom left no-repeat; color:#fff;}
 
-/*Content*/
-#content {margin:18px 0 0 0;}
-#content .container {/*background:url(../imgs/codereviewr_bgnd.png) top left repeat-y;*/}
-.sidebar-note {margin:18px 0 10px 0;}
-#cont-col1 img {padding:5px; border:1px solid #ccc; background:#efefef;}
-.featured-image {margin:18px auto; display:block;}
-
-#page-content {width:650px; padding:10px 10px 10px 20px; background:;}
-#page-content #source {overflow:auto; padding:0 20px; border:1px solid #333;}
-#sidebar {padding:0 10px 10px; width:240px;}
-
-.menu {padding:10px; background:#FFF9E6; margin:0 0 10px 0; list-style:none;}
-
-/* Footer */
-#footer {padding:40px inherit; background:#E8E9DE; border:1px solid #A0A389;}
-#footer-nav {width:100%; text-align:center; list-style:none;}
-#footer-nav li {display:inline; margin:0 10px 0;}
+#search {background:url(../imgs/search_bar_bgnd.png) top left repeat-x #6C5B3C;}
 
 /* =NAV
 ----------------------------------------------------------------------- */
-#header-nav {list-style:none; position:absolute; top:10px; right:10px;}
-#header-nav li {display:inline;}
-#header-nav li a.current-section {background:#000; color:#fff;}
-#header-nav li a {text-align:center; color:#fff; width:auto; padding:4px 8px; margin:0 2px 0 0; background:#DBCAA3; text-decoration:none; font-weight:bold;}
-
-#header-nav li a:hover {background:#486A79;}
-
-#breadcrumb {width:100%; list-style:none;}
-#breadcrumb li {display:inline; margin:0 10px 0 0;}
 
 /* =TYPOGROPHY
 ----------------------------------------------------------------------- */
-a {text-decoration:none; color:#59CBFE; font-weight:bold;}
-#sidebar a {color:#587E98;}
-.decrease {font-size:90%;}
-#sidebar h4 {text-transform:uppercase; padding:4px 8px; background:#F5E9CC; color:#C8AD89; margin:0 0 10px 0;}
-.menu {font-size:1.4em;}
-
-#footer h4 {color:#D0DCE6;}
-
-h1 {color:#223239; font-size:200%;}
-
+a {text-decoration:none;}
 em {background:none;}
+.logo {background:url(../imgs/logo.png) 0 50% no-repeat; width:260px; height:40px; line-height:40px; display:block;}
+#content h1 {background:#EEFBFC; margin:0; padding:10px 40px;}
 
 /* =FORMS
 ----------------------------------------------------------------------- */
-#search-block {height:54px; line-height:54px; margin:-10px -20px 18px -20px; text-align:center; background:#DBCAA3;}
-#search-block div, #email-signup div {display:inline;}
-#submit_search {margin:0 0 0 10px;}
+.search-block {position:absolute; top:16px; right:40px; text-align:center;}
+.submit_search {margin:0 0 0 10px;}
 .submit-bttn {border:1px solid #ccc; background:#fff; margin:10px 0 0 0;}
 
 #email-signup #sign_up {margin:0 0 9px 0; width:100%;}

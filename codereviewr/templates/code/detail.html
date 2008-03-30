@@ -4,9 +4,9 @@
 
 {% block content %}
     {% if code.is_public %}
-        <h1 class="public">{{ code.title }} <img src="{{MEDIA_URL}}imgs/public.png" alt="Public"></h1>
+        <h1 class="public code-title">{{ code.title }} <img src="{{MEDIA_URL}}imgs/public.png" alt="Public"></h1>
     {% else %}
-        <h1 class="private">{{ code.title }} <img src="{{MEDIA_URL}}imgs/private.png" alt="Private"></h1>
+        <h1 class="private code-title">{{ code.title }} <img src="{{MEDIA_URL}}imgs/private.png" alt="Private"></h1>
     {% endif %}
     <div id="local-nav">
         <ul class="clearfix reset">
@@ -20,6 +20,10 @@
 		{{ code.description }}
 	</div>
 	<div id="page-content">
+	    <div class="showhide">
+	        <a href="" title="" style="display:block">Hide Meta</a>
+	        <a href="" title="" style="display:none">Show Meta</a>
+	    </div>
 		{{ code.highlight|safe }}
 	</div>            
 {% endblock %}

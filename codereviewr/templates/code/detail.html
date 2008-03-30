@@ -4,10 +4,17 @@
 
 {% block content %}
     {% if code.is_public %}
-        <h1 class="public">{{ code.title }}</h1>
+        <h1 class="public">{{ code.title }} <img src="{{MEDIA_URL}}imgs/public.png" alt="Public"></h1>
     {% else %}
-        <h1 class="private">{{ code.title }}</h1>
+        <h1 class="private">{{ code.title }} <img src="{{MEDIA_URL}}imgs/private.png" alt="Private"></h1>
     {% endif %}
+    <div id="local-nav">
+        <ul class="clearfix reset">
+            <li><a href="" title="">edit</a></li>
+            <li><a href="" title="">diff</a></li>
+            <li><a href="" title="">comments</a></li>
+        </ul>
+    </div>
 	<div id="meta">
 		{{ code.author.username }}
 		{{ code.description }}

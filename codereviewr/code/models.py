@@ -16,7 +16,6 @@ class Code(models.Model):
     is_public = models.BooleanField(default=True)
     created = models.DateTimeField(default=datetime.now)
     updated = models.DateTimeField(blank=True, default=datetime.now)
-    slug = models.SlugField(blank=True, prepopulate_from=("title",))
  
     def __unicode__(self):
         return "%s by %s" % (self.title, self.author.get_full_name())

@@ -20,7 +20,7 @@ p.mir {line-height:0px;}
 ----------------------------------------------------------------------- */
 body {background:#fff;}
 .wrap {min-width:800px;}
-#nav, #search, #meta, #local-nav {padding:6px 40px; margin:0; position:relative;}
+#nav, #search, #local-nav {padding:6px 40px; margin:0; position:relative;}
 #nav, #local-nav {background:url(../imgs/site_navbar_bgnd.png) bottom left repeat-x #C8AD89;}
 #nav ul {list-style:none; text-align:right; float:right; width:390px;}
 #nav li {line-height:26px; height:26px; margin:10px; display:inline;}
@@ -32,6 +32,10 @@ body {background:#fff;}
 #local-nav li a {background:url(../imgs/nav_bgnd.png) top left no-repeat; line-height:26px; height:26px; display:block; width:68px; float:left; text-align:center; margin:5px 10px 5px 0; font-variant:small-caps; font-weight:bold; color:#6C5B3C;}
 
 #local-nav ul {list-style:none;}
+
+#meta {background:url(../imgs/meta_bgnd.png) bottom left repeat-x #fff; padding:20px 40px; margin:0;}
+#meta span {color:#666;}
+#meta ul {list-style:none;}
 
 .showhide {width:80px; height:20px; position:absolute; top:0; left:40px; background:#7A6238; text-align:center;}
 .showhide a {color:#fff;}

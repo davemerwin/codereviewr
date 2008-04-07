@@ -38,6 +38,9 @@ USE_I18N = True
 # Login URL
 LOGIN_URL = '/login/'
 
+# After login, go to this page
+LOGIN_REDIRECT_URL = '/'
+
 # This is the number of days activation keys will remain valid after an account is registered.
 ACCOUNT_ACTIVATION_DAYS = 30
 

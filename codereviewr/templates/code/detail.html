@@ -10,14 +10,36 @@
     {% endif %}
     <div id="local-nav">
         <ul class="clearfix reset">
-            <li><a href="" title="">edit</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="" title="">edit</a></li>
+            {% endif %}
             <li><a href="" title="">diff</a></li>
             <li><a href="" title="">comments</a></li>
         </ul>
     </div>
-	<div id="meta">
-		{{ code.author.username }}
-		{{ code.description }}
+	<div id="meta" class="clearfix">
+	        <ul class="col1 column reset span-5 append-1">
+    	        {% if code.author.username %}
+                   <li><span>Author:</span> <a href="{{code.author.get_absolute_url}}">{{ code.author.username }}</a></li>
+    	        {% endif %}
+    	        {% if code.version %}
+                   <li><span>Version:</span> {{ code.version }}</li>
+    	        {% endif %}
+                <li><span>Created:</span> {{ code.created|date:"D d M Y"}}</li>
+                <li><span>Last Modified:</span> {{ code.updated|date:"D d M Y"}}</li>
+	        </ul>
+	        <ul class="col2 column span-5 append-1">
+	            {% if code.language %}
+                   <li><span>Language:</span> {{code.language}}</li>
+	            {% endif %}
+	            {% if code.dependencies %}
+                   <li><span>Dependencies:</span> {{code.dependencies}}</li>
+	            {% endif %}
+	        </ul>
+	    <div class="col3 column span-10 last">
+            <h4>Description:</h4>
+	       	{{ code.description }}
+	    </div>
 	</div>
 	<div id="page-content">
 	    <div class="showhide">

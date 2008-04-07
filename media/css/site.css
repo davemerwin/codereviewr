@@ -31,6 +31,10 @@ body {background:#fff;}
 
 #local-nav li a {background:url(../imgs/nav_bgnd.png) top left no-repeat; line-height:26px; height:26px; display:block; width:68px; float:left; text-align:center; margin:5px 10px 5px 0; font-variant:small-caps; font-weight:bold; color:#6C5B3C;}
 
+#local-nav li a#commentsLink {width:100px; background:url(../imgs/comments_bgnd.png) top left no-repeat;}
+#local-nav li a#commentsLink:hover {background:url(../imgs/comments_bgnd.png) bottom left no-repeat;}
+
+
 #local-nav ul {list-style:none;}
 
 #meta {background:url(../imgs/meta_bgnd.png) bottom left repeat-x #fff; padding:20px 40px; margin:0;}
@@ -51,6 +55,8 @@ a {text-decoration:none; color:#89152c;}
 em {background:none;}
 .logo {background:url(../imgs/logo.png) 0 50% no-repeat; width:260px; height:40px; line-height:40px; display:block;}
 .code-title {background:#EEFBFC; margin:0; padding:10px 40px;}
+
+#meta h4 {margin:0; padding:0;}
 
 /* =FORMS
 ----------------------------------------------------------------------- */

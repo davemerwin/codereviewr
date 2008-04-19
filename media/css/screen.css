@@ -65,7 +65,7 @@ table .last {padding-right:0;}
 .hide {display:none;}
 .quiet {color:#666;}
 .loud {color:#000;}
-.highlight {background:#ff0;}
+/*.highlight {background:#ff0;} Rob Hudson removed b/c Pygments adds this class */
 .added {background:#060;color:#fff;}
 .removed {background:#900;color:#fff;}
 .top {margin-top:0;padding-top:0;}

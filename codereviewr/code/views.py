@@ -17,7 +17,7 @@ from pygments.lexers import get_lexer_for_filename
 class CodeForm(ModelForm):
     class Meta:
         model = Code
-        fields = ('title', 'code', 'description', 'dependencies', 'version', 'is_public')
+        fields = ('title', 'language', 'code', 'description', 'dependencies', 'version', 'is_public')
 
 #
 # VIEWS
@@ -31,12 +31,6 @@ def code_detail(request, code_id):
         code = Code.objects.get(pk=code_id)
     except Code.DoesNotExist:
         raise Http404, "Sorry, the code you requested was not found."
- 
-    # Pygmentize code
-    lexer = get_lexer_for_filename('test.py', stripall=True)
-    formatter = HtmlFormatter(linenos=True, cssclass="source")
-    
-    code.highlight = highlight(code.code, lexer, formatter)
     
     return render_to_response(
         'code/detail.html',

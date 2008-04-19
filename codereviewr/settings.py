@@ -36,7 +36,7 @@ SITE_ID = 1
 USE_I18N = True
 
 # Login URL
-LOGIN_URL = '/login/'
+LOGIN_URL = '/accounts/login/'
 
 # After login, go to this page
 LOGIN_REDIRECT_URL = '/'

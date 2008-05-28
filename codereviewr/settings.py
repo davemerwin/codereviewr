@@ -36,7 +36,7 @@ SITE_ID = 1
 USE_I18N = True
 
 # Login URL
-LOGIN_URL = '/accounts/login/'
+LOGIN_URL = '/accounts/signin/'
 
 # After login, go to this page
 LOGIN_REDIRECT_URL = '/'
@@ -73,7 +73,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.doc.XViewMiddleware',
-    'codereviewr.openid_cr.middleware.OpenIDMiddleware',
+    'codereviewr.authopenid.middleware.OpenIDMiddleware',
 )
 
 ROOT_URLCONF = 'codereviewr.urls'
@@ -96,7 +96,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',    
     'codereviewr.code',
-    'codereviewr.openid_cr',
+    'codereviewr.authopenid',
     'codereviewr.registration',
 )
 

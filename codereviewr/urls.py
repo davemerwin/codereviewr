@@ -20,13 +20,9 @@ urlpatterns = patterns('',
     (r'^admin/code/language/refresh/$', 'code.views.refresh_languages'),
     (r'^admin/', include('django.contrib.admin.urls')),
 
-    # OpenID
-    (r'^openid/$', 'openid_cr.views.begin', {'redirect_to': '/openid/complete/'}),
-    (r'^openid/complete/$', 'openid_cr.views.complete'),
-    (r'^openid/signout/$', 'openid_cr.views.signout'),
-    
     # account registration
-    (r'^accounts/', include('registration.urls')),
+    #(r'^accounts/', include('registration.urls')),
+    (r'^accounts/', include('authopenid.urls')),
 
     #for homepage - testing
     (r'^$', direct_to_template, {'template': 'homepage.html'}),
